@@ -1,6 +1,6 @@
 ﻿namespace JasleenAssignmentCalculator
 {
-    partial class Form1
+    partial class SplashForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,28 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.SplashFormTimer = new System.Windows.Forms.Timer(this.components);
+            this.SuspendLayout();
+            // 
+            // SplashFormTimer
+            // 
+            this.SplashFormTimer.Enabled = true;
+            this.SplashFormTimer.Interval = 1000;
+            this.SplashFormTimer.Tick += new System.EventHandler(this.SplashFormTimer_Tick);
+            // 
+            // SplashForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(274, 379);
+            this.Name = "SplashForm";
+            this.Text = "SplashForm";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer SplashFormTimer;
     }
 }
-
