@@ -234,6 +234,12 @@ namespace JasleenAssignmentCalculator
                     case "-":
                         this.Result = this.OperandList[0] - this.OperandList[1];
                         break;
+                    case "/":
+                        this.Result = this.OperandList[0] / this.OperandList[1];
+                        break;
+                    case "*":
+                        this.Result = this.OperandList[0] * this.OperandList[1];
+                        break;
                 }
                 this.OperandList.Clear();
                 this.OperandList.Add(this.Result);
@@ -286,6 +292,6 @@ namespace JasleenAssignmentCalculator
         {
             this._clear();
         }
+    }
 
     }
-}
